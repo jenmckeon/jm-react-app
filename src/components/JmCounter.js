@@ -10,6 +10,7 @@ const JmCounter = () => {
 
   return (
     <div className="max-w-lg mx-auto p-4">
+      <h1 className="text-2xl text-slate-900 font-bold pb-8">React Counter</h1>
       <h2 className="text-xl text-slate-900 font-bold pb-6">Counter: {count}</h2>
       <button className="bg-pink-500 text-white w-full px-8 py-3 outline-pink-500 rounded-full mb-2" onClick={() => setCount(count + 1)}>Increase</button>
       <button className="text-pink-500 w-full px-8 py-3 border-solid border-2 border-pink-500 rounded-full mb-2" onClick={() => setCount(count - 1)}>Decrease</button>
