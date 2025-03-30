@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import '../App.css';
-import '../index.css';  // Or wherever your CSS file is
+import '../index.css';  // Main CSS File - Utilizes TailwindCSS
 import { ApolloClient, InMemoryCache, ApolloProvider, gql, useQuery } from "@apollo/client";
 
 // Apollo Client Setup

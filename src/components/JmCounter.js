@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
-import '../index.css'; 
+import '../index.css'; // Main CSS File - Utilizes TailwindCSS
 
 const JmCounter = () => {
   const [count, setCount] = useState(0);
