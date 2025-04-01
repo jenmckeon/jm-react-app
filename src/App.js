@@ -2,16 +2,15 @@ import React from 'react'; // React import should be at the top
 import './index.css'; // Main CSS File - Utilizes TailwindCSS
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Router imports
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"; // Apollo Client imports
+import Counter from './components/JmCounter'; // Basic Counter Component
+import PostPage from './components/PostPage'; // New PostPage for dynamic post fetching
+import PostList from './components/PostList'; // New PostList to list posts
 
 // Apollo Client setup
 const client = new ApolloClient({
   uri: "https://graphqlzero.almansi.me/api",
   cache: new InMemoryCache(),
 });
-
-import Counter from './components/JmCounter'; // Basic Counter Component
-import PostPage from './components/PostPage'; // New PostPage for dynamic post fetching
-import PostList from './components/PostList'; // New PostList to list posts
 
 function App() {
   return (
